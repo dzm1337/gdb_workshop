@@ -6,7 +6,7 @@ void increment(void)
 
 	i = 0;
 	while (i < 100000)
-		i = i + 1;
+        i++;
 	write(1, "increment done\n", 12);
 }
 	// The loop itself is boring — only line 10 matters here.
@@ -20,7 +20,7 @@ void increment_2(void)
 
 	i = 0;
 	while (i < 100000)
-		i = i + 1;
+        i++;
 }
 	// This one's not worth watching either — step in, then finish out
 

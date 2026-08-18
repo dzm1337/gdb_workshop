@@ -1,28 +1,37 @@
 #include <unistd.h>
 
-void bar(int i)
+void cond(int i, int *ptr)
 {
 	if (i == 963)
-		write(1, "AAAA\n", 5);
+    {
+		write(1, "yolo\n", 5);
+        (*ptr)++;
+    }
 }
-	// bar runs 1000 times — to catch only the call where i is 963:
-	//   break bar if i == 963
+	// cond runs 1000 times — to catch only the call where i is 963:
+	//   break cond if i == 963
 
-void foo(void)
+void loop(void)
 {
 	int i;
+    int result;
+    char c;
 
+    result = 6;
 	i = 0;
 	while (i < 1000)
 	{
-		bar(i);
-		i = i + 1;
+		cond(i, &result);
+        i++;
 	}
+    c = result + '0';
+    write(1, &c, 1);
+    write(1, "\n", 1);
 }
 
 int main(void)
 {
-	foo();
+	loop();
 	return (0);
 }
-	// Break on foo directly — no need to step through main to get here
+	// Break on loop directly — no need to step through main to get here
