@@ -2,7 +2,7 @@
 
 Answer key for the challenges in `exercices/` (`ex01_segfault` through
 `ex04_infiniteloop`). The guided lessons in `01_getting_started` through
-`05_call_stack` don't need one — the `readme.txt` in each covers those.
+`06_call_stack` don't need one — the `readme.txt` in each covers those.
 Don't hand this out before people have tried; use it to check answers
 or unstick someone who's been stuck for a few minutes.
 
