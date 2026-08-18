@@ -1,5 +1,6 @@
 break/b {func_name}
-break/b {file_name} or {line_number}
+break/b {line_number}
+break/b {file_name}:{line_number}
 	Create a breakpoint on a certain function or line in a file
 	Breakpoints tell the debugger when to stop running the code and
 	go into step-by-step mode
