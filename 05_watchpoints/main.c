@@ -8,8 +8,6 @@ void cond(int i, int *ptr)
         (*ptr)++;
     }
 }
-	// cond runs 1000 times — to catch only the call where i is 963:
-	//   break cond if i == 963
 
 void loop(void)
 {
@@ -34,4 +32,3 @@ int main(void)
 	loop();
 	return (0);
 }
-	// Break on loop directly — no need to step through main to get here

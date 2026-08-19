@@ -8,6 +8,12 @@ next/n
 
 finish/fin
 	Finish running the current function and return to the caller
+	Also prints the value the function returned
+
+continue/c
+	Resume running the program until it hits the next breakpoint
+	(or ends) — unlike run, it picks up from where you currently are
+	instead of starting over
 
 until {line_number}
 	Continue running the program until it reaches this line

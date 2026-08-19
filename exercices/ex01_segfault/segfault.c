@@ -11,8 +11,8 @@ int main(void)
 	int *y;
 	int ret;
 
-	x = 5;
-	y = NULL;
+	x = 4;
+	y = &x;
 	ret = add(&x, y) + '0';
 	write(1, &ret, 1);
 	write(1, "\nDone\n", 6);
