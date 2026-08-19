@@ -1,20 +1,18 @@
 #include <unistd.h>
 
-void print_dot(int i, int x)
-{
-	while (i <= x)
-	{
-		write(1, ".", 1);
-		i++;
-	}
-	write(1, "\n", 1);
-	write(1, "Hello, 42!\n", 11);
-}
-	// break print_dot, then run, then next through the loop
-
 int main(void)
 {
-	print_dot(0, 4);
+    int i;
+    int j;
+    int *x;
+
+    i = 3;
+    j = 4;
+    x = &i;
+    
+    i += j;
+    k = j * 2;
+	write(1, "Hello, 42!\n", 11);
 	return (0);
 }
 	// kill stops it early; run/r starts the program over

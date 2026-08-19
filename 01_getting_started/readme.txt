@@ -7,11 +7,20 @@ gdb {program_name}
 layout src
 	Go to the source layout, so you can see the code while you debug
 
-quit/q
-	Quit gdb
+run/r {arg1} {arg2} {arg...}
+	Start running the program
+	If you want program arguments you can give them here
 
-Start with starting.c: compile it, open it in gdb, lay src, run, quit.
-Once that feels natural, move on to main.c below and try breakpoints.
+print/p {var}
+	Print out the current value of a variable
+
+print/p {expr}
+	print understands C syntax, not just variable names
+	print i * 2 - 1
+
+print/p *{ptr}
+	Dereference a pointer and print what it points to
+	(try: print *argv — argv is char**, so this prints argv[0])
 
 break/b {func_name}
 break/b {line_number}
@@ -20,16 +29,11 @@ break/b {file_name}:{line_number}
 	Breakpoints tell the debugger when to stop running the code and
 	go into step-by-step mode
 
-run/r {cmd_arg1} {cmd_arg2} {cmd_arg...}
-	Start running the program
-	If you want program arguments you can give them here
+quit/q
+	Quit gdb
 
 next/n
 	Run the current line and stop again on the next one
 
 kill
 	Stop the currently running program
-
-If you want to rerun the program from the start, just use run/r again.
-
-# TIP: to repeat the last command, just press enter without typing anything
