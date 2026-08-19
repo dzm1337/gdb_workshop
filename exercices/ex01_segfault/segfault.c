@@ -12,7 +12,7 @@ int main(void)
 	int ret;
 
 	x = 4;
-	y = &x;
+	y = NULL;
 	ret = add(&x, y) + '0';
 	write(1, &ret, 1);
 	write(1, "\nDone\n", 6);

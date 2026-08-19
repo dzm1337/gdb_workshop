@@ -78,15 +78,6 @@ disable/enable N         turn a breakpoint/watchpoint off/on
 break LOC if cond        breakpoint that only stops when cond is true
 condition N cond         add a condition to an existing breakpoint
 condition N              clear an existing breakpoint's condition
-```
-
-## Reverse debugging
-
-```
-target record-full       start recording program state so you can rewind
-reverse-next/rn           undo the current line, stepping OVER calls
-reverse-step/rs           undo the current line, stepping INTO calls
-reverse-continue/rc       run backwards to the previous breakpoint
 set var x = 5             change a variable's value while running
 ```
 

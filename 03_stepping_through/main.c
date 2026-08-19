@@ -7,7 +7,7 @@ void increment(void)
 	i = 0;
 	while (i < 100000)
         i++;
-	write(1, "increment done\n", 12);
+	write(1, "increment done\n", 15);
 }
 
 void increment_2(void)

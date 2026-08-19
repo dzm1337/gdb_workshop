@@ -12,7 +12,7 @@ finish/fin
 
 continue/c
 	Resume running the program until it hits the next breakpoint
-	(or ends) — unlike run, it picks up from where you currently are
+	(or ends), unlike run, it picks up from where you currently are
 	instead of starting over
 
 until {line_number}

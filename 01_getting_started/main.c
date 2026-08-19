@@ -11,8 +11,7 @@ int main(void)
     x = &i;
     
     i += j;
-    k = j * 2;
+    j = i * 2;
 	write(1, "Hello, 42!\n", 11);
 	return (0);
 }
-	// kill stops it early; run/r starts the program over

@@ -1,5 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
 
 int step_d(int n)
 {
@@ -33,7 +32,6 @@ int main(void)
 	int result;
 
 	step_a(1);
-    printf("%d", 1);
 	write(1, "Done\n", 5);
 	result = factorial(4);
 	write(1, "done\n", 5);
